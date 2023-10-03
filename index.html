@@ -25,7 +25,7 @@
       <div class="weather-app">
         <form id="search-form" class="mb-3">
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
               <input
                 type="search"
                 placeholder="Type a city..."
@@ -39,19 +39,24 @@
               <input
                 type="submit"
                 value="Search"
-                class="btn btn-primary w-100"
+                class="btn btn-primary w-100 search-button"
               />
             </div>
-            <div class="col-3">
+            <div class="col-1">
               <button
-                class="btn btn-success w-100"
+                class="w-100 current-location-button"
                 id="current-location-button"
               >
-                Current
+                <img
+                  src="images/currentlocationicon.png"
+                  width="50px"
+                  height="48px"
+                />
               </button>
             </div>
           </div>
         </form>
+        <hr class="search-line-break" />
         <div class="overview">
           <h1 id="city"></h1>
           <ul>
@@ -71,6 +76,7 @@
             </ul>
           </div>
         </div>
+        <hr class="bottom-hr" />
         <div class="weather-forecast" id="forecast"></div>
       </div>
       <small>
